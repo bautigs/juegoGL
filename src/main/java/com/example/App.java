@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {   
         Jugador jugador = new Jugador("Matias");
-        InteligenciaArtificial ia = new InteligenciaArtificial(new IAAleatoria());
+        InteligenciaArtificial ia = new InteligenciaArtificial(new IAEstrategica());
 
         List<Elemento> elementosDisponibles = new ArrayList<>();
 

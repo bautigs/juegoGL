@@ -34,4 +34,11 @@ public class Carta {
     public String toString(){
         return "Carta de " + this.miElemento.toString() + ", vida restante: " + this.vida;
     }
+
+    public static Double deltaDeDaño(Carta cartaActivaDelRival, Carta cartaDeLaIA){
+        Double dañoRealizado = cartaDeLaIA.getElemento().dañoA(cartaActivaDelRival.getElemento());
+        Double dañoRecibido = cartaDeLaIA.getElemento().dañoA(cartaActivaDelRival.getElemento());
+
+        return dañoRealizado - dañoRecibido; 
+    }
 }
