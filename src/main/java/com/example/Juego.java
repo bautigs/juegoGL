@@ -70,6 +70,7 @@ public class Juego {
 
                 if (ia.sinCartasVivas()) {
                     System.out.println("La IA no tiene más cartas con vida. El juego termina. El jugador " + this.jugador.getNombre() + " gana.");
+                    jugador.cerrarScanner();
                     juegoActivo = false;
                     break;
                 }
@@ -97,6 +98,7 @@ public class Juego {
 
                 if(jugador.sinCartasVivas()){
                     System.out.println("El jugador no tiene más cartas con vida. El juego termina. La IA gana.");
+                    jugador.cerrarScanner();
                     juegoActivo = false;
                     break;
                 }
