@@ -3,8 +3,11 @@ import java.util.*;
 
 public class Jugador extends Participante{
 
+    Scanner scanner; 
+
     public Jugador(String nombre) {
         super(nombre);
+        scanner = new Scanner(System.in);
     }
 
     public Carta seleccionarCarta(Carta cartaActivaDelRival){
@@ -15,13 +18,15 @@ public class Jugador extends Participante{
 
         this.mostrarCartas();
 
-        Scanner scanner = new Scanner(System.in);
-
         int elegida = scanner.nextInt();
 
         this.cartaActiva = this.mano.get(elegida);
 
         return this.cartaActiva;
+    }
+
+    public void cerrarScanner(){
+        scanner.close();
     }
 
 }
