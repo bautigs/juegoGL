@@ -18,7 +18,7 @@ public class ElementoAgua extends Elemento{
 
         @Override
         public String toString(){
-            return "Elemento de agua";
+            return "elemento de agua";
         }
 
     }

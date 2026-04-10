@@ -28,7 +28,7 @@ public class Juego {
     public void mostrarEstadoPartida(){
         System.out.println("Tus cartas son: ");
         jugador.mostrarCartas();
-        System.out.println("\n Las cartas de la ia son: ");
+        System.out.println("\nLas cartas de la ia son: ");
         ia.mostrarCartas();
         System.out.println();
 
@@ -44,13 +44,19 @@ public class Juego {
         Carta cartaJugador = this.jugador.seleccionarCarta(null);
         Carta cartaIA = this.ia.seleccionarCarta(cartaJugador);
 
+        int turno = 1;
 
         while(juegoActivo){
 
+
+            System.out.println("---------- INICIO TURNO NÚMERO:" + turno +  " ----------");
+
             System.out.println("La carta seleccionada por la IA fue: " + cartaIA.toString());
+            System.out.println();
 
             double dañoJugadorAIA = cartaJugador.atacarA(cartaIA);
 
+            System.out.println("---------- ATAQUE DEL JUGADOR ----------");
             System.out.println("El ataque del jugador infligió un daño de: " + dañoJugadorAIA);
 
             double vidaCartaIA = cartaIA.getVida();
@@ -59,6 +65,7 @@ public class Juego {
 
             if(vidaCartaIA == 0) {
                 System.out.println("La carta de la IA ha sido vencida!");
+                System.out.println();
                 ia.eliminarCarta(cartaIA);
 
                 if (ia.sinCartasVivas()) {
@@ -74,6 +81,8 @@ public class Juego {
 
             double dañoIAaJugador = cartaIA.atacarA(cartaJugador);
 
+            System.out.println();
+            System.out.println("---------- ATAQUE DE LA IA ----------");
             System.out.println("El ataque de la IA infligió un daño de: " + dañoIAaJugador);
 
             double vidaCartaJugador = cartaJugador.getVida();
@@ -82,6 +91,7 @@ public class Juego {
 
             if(vidaCartaJugador == 0){
                 System.out.println("La carta del jugador ha sido vencida!");
+                System.out.println();
                 jugador.eliminarCarta(cartaJugador);
 
 
@@ -97,8 +107,11 @@ public class Juego {
             }
 
             System.out.println();
+            System.out.println("---------- FIN TURNO NÚMERO:" + turno +  " ----------");
             System.out.println("El turno ha finalizado y el estado de la partida es el siguiente: ");
             this.mostrarEstadoPartida();
+
+            turno++;
 
             cartaJugador = this.jugador.getCartaActiva();
             cartaIA = this.ia.getCartaActiva();

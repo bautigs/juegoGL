@@ -19,7 +19,7 @@ public class ElementoTierra extends Elemento{
 
         @Override
         public String toString(){
-            return "Elemento de tierra";
+            return "elemento de tierra";
         }
 
 

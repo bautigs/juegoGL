@@ -32,6 +32,6 @@ public class Carta {
     }
     @Override 
     public String toString(){
-        return "Soy una carta de " + this.miElemento.toString() + " y mi vida es: " + this.vida;
+        return "Carta de " + this.miElemento.toString() + ", vida restante: " + this.vida;
     }
 }
