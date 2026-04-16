@@ -1,9 +1,149 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="fDGRVItnQq5zJNXoRo8O">
-    <mxGraphModel>
+    <mxGraphModel dx="809" dy="417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="qIANsiue6q2Z4mSJWml--1" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Usuario&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String user&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String contrasenia&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- LocalDate fechaAlta&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="505" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--2" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Administrador&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Usuario usuario&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String nombre&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String email&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="450" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--3" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--2" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="qIANsiue6q2Z4mSJWml--1" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="570" y="260" as="sourcePoint" />
+            <mxPoint x="730" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--4" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Profesor&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Usuario usuario&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String nombre&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String email&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- List&amp;lt;Curso&amp;gt; cursos&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="660" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--5" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Alumno&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Usuario usuario&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String nombre&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String email&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- LocalDate fechaInscripcion&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="870" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--6" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--4" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="qIANsiue6q2Z4mSJWml--1" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="720" y="200" as="sourcePoint" />
+            <mxPoint x="880" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--7" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--5" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="qIANsiue6q2Z4mSJWml--1" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="930" y="230" as="sourcePoint" />
+            <mxPoint x="1090" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--8" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--9" connectable="0" parent="qIANsiue6q2Z4mSJWml--8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.6599" y="1" as="geometry">
+            <mxPoint x="1" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--10" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Curso&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String nombre&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- List&amp;lt;Profesor&amp;gt; profesores&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- boolean disponible&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String descripcion&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- List&amp;lt;Tema&amp;gt; temas&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Set&amp;lt;Cursada&amp;gt; cursadasDeAlumnos&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Integer cantidadExamenes&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- CriterioDeAprobacion criterio&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ listarAlumnosSegunEstadoCursada(EstadoCursada) : List&amp;lt;Alumno&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ listarAlumnosPendientes() : List&amp;lt;Alumno&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ listarAlumnosReprobados() : List&amp;lt;Alumno&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ calcularDuracion():Double&lt;/p&gt;" vertex="1">
+          <mxGeometry height="290" width="300" x="620" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--11" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;entryX=0.322;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;" target="qIANsiue6q2Z4mSJWml--10" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="710" y="390" as="sourcePoint" />
+            <mxPoint x="870" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--12" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Tema&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String titulo&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String descripcion&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Double duracionHrs&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="400" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--13" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--10" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.001;exitY=0.176;exitDx=0;exitDy=0;exitPerimeter=0;" target="qIANsiue6q2Z4mSJWml--12" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="590" y="480" as="sourcePoint" />
+            <mxPoint x="627" y="537" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--14" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="qIANsiue6q2Z4mSJWml--20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--15" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="qIANsiue6q2Z4mSJWml--22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--16" connectable="0" parent="qIANsiue6q2Z4mSJWml--15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.366" y="-1" as="geometry">
+            <mxPoint x="6" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--17" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Cursada&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- LocalDateTime fechaYHoraDeInscripcion&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Alumno alumno&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- List&amp;lt;Examen&amp;gt; examen&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- EstadoCursada estadoActual&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="255" x="1000" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--18" edge="1" parent="1" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="920" y="560" as="sourcePoint" />
+            <mxPoint x="1000" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--19" connectable="0" parent="qIANsiue6q2Z4mSJWml--18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.344" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--20" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Enum&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;EstadoCursada&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;APROBADA&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;REPROBADA&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;PENDIENTE&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="1325" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--21" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.875;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="qIANsiue6q2Z4mSJWml--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--22" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Examen&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- LocalDate fechaTomada&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- String titulo&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Double nota&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="1040" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--23" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Intefrace&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;CriterioDeAprobacion&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ determinarResultadoCursado(Integer, Cursada) : EstadoCursada&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="390" x="690" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--24" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--10" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qIANsiue6q2Z4mSJWml--23" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="830" y="770" as="sourcePoint" />
+            <mxPoint x="990" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--25" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--23" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;curved=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.088;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;" target="qIANsiue6q2Z4mSJWml--17" value="Use">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="950" y="790" as="sourcePoint" />
+            <mxPoint x="1110" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--26" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--23" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;curved=1;exitX=1.008;exitY=0.447;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.372;entryY=1.015;entryDx=0;entryDy=0;entryPerimeter=0;" target="qIANsiue6q2Z4mSJWml--20" value="Use">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1150" y="820" as="sourcePoint" />
+            <mxPoint x="1310" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--27" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CriterioSimple&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ determinarResultadoCursado(Integer, Cursada) : EstadoCursada&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="430" x="380" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--28" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CriterioPromedio&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ determinarResultadoCursado(Integer, Cursada) : EstadoCursada&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="430" x="690" y="1155" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--29" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CriterioCombinado&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ determinarResultadoCursado(Integer, Cursada) : EstadoCursada&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="430" x="1050" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--30" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--27" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.767;exitY=0.021;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.231;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="qIANsiue6q2Z4mSJWml--23" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="600" y="980" as="sourcePoint" />
+            <mxPoint x="760" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--31" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--28" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.483;exitY=0.015;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="qIANsiue6q2Z4mSJWml--23" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="860" y="1100" as="sourcePoint" />
+            <mxPoint x="1020" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qIANsiue6q2Z4mSJWml--32" edge="1" parent="1" source="qIANsiue6q2Z4mSJWml--29" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="qIANsiue6q2Z4mSJWml--23" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="1160" y="960" as="sourcePoint" />
+            <mxPoint x="1320" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
